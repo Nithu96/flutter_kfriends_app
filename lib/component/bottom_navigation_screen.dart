@@ -2,10 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_snake_navigationbar/flutter_snake_navigationbar.dart';
 
-import '../screen/community_screen.dart';
-import '../screen/friend_screen.dart';
-import '../screen/home_screen.dart';
-import '../screen/myfriend_screen.dart';
+import '../screen/sub_screen/community_screen.dart';
+import '../screen/sub_screen/friend_screen.dart';
+import '../screen/sub_screen/home_screen.dart';
+import '../screen/home_screen2.dart';
+import '../screen/sub_screen/myfriend_screen.dart';
 
 
 class BottomNaviScreen extends StatefulWidget {
@@ -43,19 +44,44 @@ class _BottomNaviScreenState extends State<BottomNaviScreen> {
     const Color(0xFF707070),
   ];
 
-  screen() {
-    if (_selectedItemPosition == 0) return const HomeScreen();
+  Widget screen() {
+    if (_selectedItemPosition == 0) return const HomeScreen2();
     if (_selectedItemPosition == 1) return const CommunityScreen();
     if (_selectedItemPosition == 2) return const FriendScreen();
-    if (_selectedItemPosition == 1) return const MyFriendScreen();
+    if (_selectedItemPosition == 3) return const MyFriendScreen();
+    return Container();
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Image.asset(
+          'assets/mainLogo.png',
+          scale: 1,
+        ),
+        actions: <Widget>[
+          IconButton(
+            icon: const Icon(Icons.person_outline),
+            tooltip: 'profile',
+            color: Color(0xFF8B8B8B),
+            onPressed: () {},
+          ), //IconButton
+        ],
+        centerTitle: true,
+        backgroundColor: Color(0xFFFFFFFF),
+        elevation: 1.0,
+        leading: IconButton(
+          icon: const Icon(Icons.notifications_none),
+          tooltip: 'Menu Icon',
+          color: Color(0xFF8B8B8B),
+          onPressed: () {},
+        ),
+        //systemOverlayStyle: SystemUiOverlayStyle.light,
+      ),
       extendBodyBehindAppBar: false,
       resizeToAvoidBottomInset: true,
-      extendBody: true,
+
       body: screen(),
       bottomNavigationBar: SnakeNavigationBar.color(
         height: 80,

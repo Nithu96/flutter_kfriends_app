@@ -3,7 +3,7 @@ import 'dart:async';
 
 import '../component/bottom_navigation_screen.dart';
 import '../services/font_size.dart';
-import 'home_screen.dart';
+import 'sub_screen/home_screen.dart';
 
 
 class LoadingScreen extends StatefulWidget {

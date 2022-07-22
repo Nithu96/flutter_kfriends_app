@@ -2,10 +2,10 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 
-import '../models/card_details.dart';
-import '../models/community_card.dart';
-import '../models/post_details.dart';
-import '../services/font_size.dart';
+import '../../models/card_details.dart';
+import '../../models/community_card.dart';
+import '../../models/post_details.dart';
+import '../../services/font_size.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -83,11 +83,11 @@ class _HomeScreenState extends State<HomeScreen> {
             onPressed: () {},
           ), //IconButton
         ],
-        //<Widget>[]
+        centerTitle: true,
         backgroundColor: Color(0xFFFFFFFF),
         elevation: 1.0,
         leading: IconButton(
-          icon: const Icon(Icons.notifications),
+          icon: const Icon(Icons.notifications_none),
           tooltip: 'Menu Icon',
           color: Color(0xFF8B8B8B),
           onPressed: () {},
@@ -96,8 +96,8 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       body: SingleChildScrollView(
         child: Container(
-          width: MediaQuery.of(context).size.width,
-          height: MediaQuery.of(context).size.height,
+          // width: MediaQuery.of(context).size.width,
+          // height: MediaQuery.of(context).size.height,
           child: Column(
             children: [
               Container(
