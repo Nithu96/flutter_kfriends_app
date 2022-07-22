@@ -1,16 +1,9 @@
 # kfriends
 
-A new Flutter project.
+# Introduction
 
-## Getting Started
+- This is a simple application developed for check UI Skills.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Snapshots
+![android_image 1](https://user-images.githubusercontent.com/36669120/180571190-d9d91c8d-9961-4d67-81b1-86ea7020e5ae.png)
+![android_image2](https://user-images.githubusercontent.com/36669120/180571201-967a5a3c-766e-472a-8d13-1b234ec4e8cc.png)
